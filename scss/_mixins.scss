@@ -1,0 +1,17 @@
+@mixin main-title($font-size: 48px, $margin-bottom: 20px) {
+  font-size: $font-size;
+  font-weight: 700;
+  color: $text-main;
+  line-height: 1;
+  margin-bottom: $margin-bottom;
+  text-align: center;
+
+  &-accent {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: $accent-color;
+    border-radius: 50%;
+    margin-left: 4px;
+  }
+}

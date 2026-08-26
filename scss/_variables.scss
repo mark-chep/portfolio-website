@@ -1,0 +1,38 @@
+$bg-color: #0E1419;
+$accent-color: #4df0c2;
+$text-main: #ffffff;
+$text-muted: #8d95a5;
+$ticker-color: #94B2DE;
+
+$font-main: 'Plus Jakarta Sans', sans-serif;
+$container-width: 1280px;
+
+$subtitle-gradient: linear-gradient(90deg, #8d95a5 0%, rgba(141, 149, 165, 0.15) 100%);
+$box-border-gradient: linear-gradient(135deg, #7bb1e8 0%, $accent-color 100%);
+$section-padding-top: 100px;
+$section-padding-tablet: 70px;
+$section-padding-mobile: 40px;
+
+$bp-desktop: 1200px;
+$bp-tablet: 992px;
+$bp-mobile-lg: 768px;
+$bp-mobile: 480px;
+
+$container-padding-desktop: 32px;
+$container-padding-tablet: 24px;
+$container-padding-mobile: 16px;
+
+$surface-color: #12161f;
+$text-secondary: rgba(255, 255, 255, 0.7);
+$text-tertiary: rgba(255, 255, 255, 0.6);
+$text-accent-muted: #a9c2d8;
+
+$border-hairline: rgba(255, 255, 255, 0.05);
+$border-subtle: rgba(255, 255, 255, 0.08);
+$border-light: rgba(255, 255, 255, 0.1);
+
+$bg-subtle: rgba(255, 255, 255, 0.03);
+$bg-subtle-alt: rgba(255, 255, 255, 0.04);
+
+$radius-lg: 12px;
+$radius-md: 8px;

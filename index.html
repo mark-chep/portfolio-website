@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mark Chepizhnyi | Fullstack Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Mark Chepizhnyi, Fullstack Developer. Specializing in React, TypeScript, Node.js, and Java. Explore interactive web apps, games, and API services.">
+    <meta name="keywords" content="Mark Chepizhnyi, Fullstack Developer, Frontend, React, TypeScript, Node.js, Java, Portfolio">
+    <meta name="author" content="Mark Chepizhnyi">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mark-chep.github.io/">
+    <meta property="og:title" content="Mark Chepizhnyi | Fullstack Developer Portfolio">
+    <meta property="og:description" content="Fullstack Developer portfolio featuring React, TypeScript, Node.js, and Java projects with live demos and clean architecture.">
+    <meta property="og:image" content="https://mark-chep.github.io/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Mark Chepizhnyi Portfolio">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mark Chepizhnyi | Fullstack Developer Portfolio">
+    <meta name="twitter:description" content="Fullstack Developer portfolio featuring React, TypeScript, Node.js, and Java projects.">
+    <meta name="twitter:image" content="https://mark-chep.github.io/assets/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+
+    <link rel="stylesheet" href="./scss/style.css">
+  </head>
+  <body>
+
+      <!-- HEADER -->
+      <header class="header">
+        <div class="container header__container">
+          <a href="#hero" class="header__logo">
+            Mark<span class="header__logo-accent">/</span>
+          </a>
+
+          <button class="header__burger" id="burgerBtn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="header__nav" id="headerNav">
+            <a href="#about" class="header__link">About</a>
+            <a href="#experience" class="header__link">Experience</a>
+            <a href="#projects" class="header__link">Projects</a>
+            <a href="#contacts" class="header__link">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main-content">
+
+        <!-- 1. HERO SECTION -->
+        <section class="hero" id="hero">
+          <div class="container">
+            <div class="hero__inner">
+              
+              <div class="hero__box">
+                <span class="hero__code-icon">&lt;/&gt;</span>
+              </div>
+
+              <div class="hero__content">
+                <h1 class="hero__title">Hi, I'm Mark<span class="hero__title-accent"></span></h1>
+                <h2 class="hero__subtitle">Frontend Dev</h2>
+                
+                <div class="hero__tech-stack">
+                  <img class="hero__tech-icon" src="./assets/icons/html5.svg" alt="HTML5">
+                  <img class="hero__tech-icon" src="./assets/icons/css.svg" alt="CSS">
+                  <img class="hero__tech-icon" src="./assets/icons/javascript.svg" alt="JS">
+                  <img class="hero__tech-icon" src="./assets/icons/figma.svg" alt="Figma">
+                  <img class="hero__tech-icon" src="./assets/icons/git.svg" alt="Git">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="ticker">
+            <div class="ticker__track" id="tickerTrack">
+            </div>
+          </div>
+          
+        </section>
+
+        <!-- 2. ABOUT & SKILLS SECTION -->
+        <section class="about" id="about">
+          <div class="container">
+            <h2 class="about__title">
+              About<span class="about__title-accent"></span>
+            </h2>
+
+            <div class="about__grid">
+              <div class="about__text">
+                <p class="about__paragraph">
+                  Hi, I'm Mark — a
+                  <span class="about__highlight">Front-end Developer</span> with a Java-influenced engineering mindset and a solid command of <span class="about__highlight">React, TypeScript, and Node.js</span>.
+                </p>
+                
+                <p class="about__paragraph">
+                  I bring a unique background as a former <span class="about__highlight">Freelance 3D Artist</span>, which refined my ability to manage complex client feedback and maintain visual precision. My technical journey started with Java, providing a strong foundation in <span class="about__highlight">OOP and system architecture</span>.
+                </p>
+
+                <p class="about__paragraph">
+                  I notably optimized an e-commerce platform by implementing a <span class="about__highlight">fuzzy search (Fuse.js)</span> and refactoring the codebase to <span class="about__highlight">absolute aliases</span> for better maintainability.
+                </p>
+              </div>
+              <div class="about__skills">
+                <div class="skill-card">
+                  <h3 class="skill-card__title">Frontend</h3>
+                  <p class="skill-card__text">TypeScript, JavaScript (ES6+), React, HTML5, CSS3, Sass (SCSS), BEM, Framer Motion</p>
+                </div>
+                <div class="skill-card">
+                  <h3 class="skill-card__title">Backend & DB</h3>
+                  <p class="skill-card__text">Node.js, Express, Java (Spring Boot, Data, Security), SQL, PostgreSQL, REST API, WebSockets</p>
+                </div>
+                <div class="skill-card">
+                  <h3 class="skill-card__title">Tools & Design</h3>
+                  <p class="skill-card__text">Git, Webpack, Vite, Fuse.js, Jira, Blender, Substance 3D Painter, ZBrush</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. EXPERIENCE SECTION -->
+        <section class="experience" id="experience">
+          <div class="container">
+            <h2 class="experience__title">
+              Experience<span class="experience__title-accent"></span>
+            </h2>
+
+            <div class="experience__list">
+              
+              <!-- Frontend -->
+              <div class="exp-card">
+                <div class="exp-card__date">NOV 2025 — PRESENT</div>
+
+                <div class="exp-card__content">
+                  <div class="exp-card__header">
+                    <h3 class="exp-card__title">Frontend Developer</h3>
+                  </div>
+                  <p class="exp-card__tech">JavaScript, React, TypeScript, HTML, CSS, BEM, Node.js, PostgreSQL</p>
+                  <ul class="exp-card__details">
+                    <li class="exp-card__detail-item">Built scalable UI components with React & TypeScript, ensuring strict type safety and modularity.</li>
+                    <li class="exp-card__detail-item">Engineered a reusable async API client using Generics and managed complex application states with real-time validation.</li>
+                    <li class="exp-card__detail-item">Implemented high-fidelity responsive interfaces (BEM/SCSS) and optimized search features using Fuse.js and debouncing.</li>
+                    <li class="exp-card__detail-item">Improved codebase maintainability by implementing absolute aliases and conducting project-wide refactoring.</li>
+                    <li class="exp-card__detail-item">Participated in Agile ceremonies and code reviews, managing tasks efficiently through Jira.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- 3D Artist -->
+              <div class="exp-card">
+                <div class="exp-card__date">DEC 2024 — NOV 2025</div>
+
+                <div class="exp-card__content">
+                  <div class="exp-card__header">
+                    <h3 class="exp-card__title">3D Artist / Visualizer (Freelance)</h3>
+                  </div>
+                  <p class="exp-card__tech">Blender, Substance 3D Painter, Marmoset Toolbag, 3DCoat, ZBrush, Photoshop</p>
+                  <ul class="exp-card__details">
+                    <li class="exp-card__detail-item">Developed high-quality 3D models and environments for games and advertising, ensuring optimal geometry and texture mapping.</li>
+                    <li class="exp-card__detail-item">Handled full project lifecycles, from initial concept to final delivery, directly communicating with clients to align on vision.</li>
+                    <li class="exp-card__detail-item">Managed complex feedback loops and technical constraints, adapting assets to meet specific engine or rendering requirements.</li>
+                    <li class="exp-card__detail-item">Delivered high-fidelity visualizations with a focus on lighting, composition, and realistic material behavior.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Java Developer -->
+              <div class="exp-card">
+                <div class="exp-card__date">2022 — 2024</div>
+
+                <div class="exp-card__content">
+                  <div class="exp-card__header">
+                    <h3 class="exp-card__title">Java Developer (Project-based)</h3>
+                  </div>
+                  <p class="exp-card__tech">Java Core, Spring Boot, Spring Data JPA, SQL, PostgreSQL, Hibernate, Maven/Gradle</p>
+                  <ul class="exp-card__details">
+                    <li class="exp-card__detail-item">Designed and implemented server-side logic using Spring Boot, focusing on RESTful API architecture and clean code principles.</li>
+                    <li class="exp-card__detail-item">Architected relational database schemas and managed data persistence using PostgreSQL and Hibernate/JPA.</li>
+                    <li class="exp-card__detail-item">Developed integration layers for external services (Banking APIs) using asynchronous data fetching and efficient DTO mapping.</li>
+                    <li class="exp-card__detail-item">Managed project configuration and migration flows using Flyway/Liquibase to ensure data consistency across development stages.</li>
+                    <li class="exp-card__detail-item">Applied OOP principles and design patterns to build maintainable and scalable backend services.</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. PROJECTS SECTION -->
+        <section class="projects" id="projects">
+          <div class="container">
+            <h2 class="projects__title">
+              Projects<span class="projects__title-accent"></span>
+            </h2>
+
+            <div class="projects__grid">
+
+              <!-- PROJECT 1: PHONE CATALOG -->
+              <article class="project-card">
+                <div class="project-card__inner">
+                  
+                  <div class="project-card__front">
+                    <div class="project-card__top">
+                      <span class="project-card__tag">Fullstack / E-Commerce</span>
+                      <h3 class="project-card__title">Phone Catalog</h3>
+                      <p class="project-card__description">
+                        E-commerce platform with fuzzy search, interactive UI animations, and absolute aliases architecture.
+                      </p>
+                    </div>
+
+                    <div class="project-card__bottom">
+                      <div class="project-card__stack">
+                        <span class="project-card__tech-item">React</span>
+                        <span class="project-card__tech-item">TypeScript</span>
+                        <span class="project-card__tech-item">Node.js</span>
+                        <span class="project-card__tech-item">PostgreSQL</span>
+                        <span class="project-card__tech-item">SCSS</span>
+                      </div>
+
+                      <div class="project-card__hint">
+                        <span>Tap for details</span>
+                        <svg class="project-card__hint-icon" viewBox="0 0 24 24">
+                          <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/>
+                          <path d="M21 3v5h-5"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card__back">
+                    <div class="project-card__back-top">
+                      <h4 class="project-card__back-title">What I did:</h4>
+
+                      <div class="project-card__details-wrap">
+                        <ul class="project-card__details" data-scroll-list>
+                          <li class="project-card__detail-item">
+                            Built the core Header and Interactive Search functionality, focusing on high performance and web accessibility.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Implemented Fuse.js with fuzzy search and debouncing to create a fast, typo-tolerant user experience.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Integrated Framer Motion to provide fluid, real-time visual feedback and interactive animations.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Led a project-wide refactoring to absolute aliases, significantly improving code maintainability and team workflow efficiency.
+                          </li>
+                        </ul>
+
+                        <div class="project-card__scrollbar" data-scrollbar>
+                          <div class="project-card__scrollbar-thumb" data-scrollbar-thumb></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="project-card__back-footer">
+                      <div class="project-card__links">
+                        <a href="https://team-project-phone-catalog.github.io/" target="_blank" rel="noopener noreferrer" class="project-card__link">Demo</a>
+                        <a href="https://github.com/Team-Project-Phone-catalog/team-project-phone-catalog.github.io" target="_blank" rel="noopener noreferrer" class="project-card__link">GitHub Frontend</a>
+                        <a href="https://github.com/MaksOther/phone-catalog-backend" target="_blank" rel="noopener noreferrer" class="project-card__link">GitHub Backend</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+              <!-- PROJECT 2: TODO APP -->
+              <article class="project-card">
+
+                <div class="project-card__inner">
+                  <div class="project-card__front">
+                    <div class="project-card__top">
+                      <span class="project-card__tag">Frontend / SPA</span>
+                      <h3 class="project-card__title">TODO App</h3>
+                      <p class="project-card__description">
+                        High-performance SPA with custom async API client and inline editing.
+                      </p>
+                    </div>
+
+                    <div class="project-card__bottom">
+                      <div class="project-card__stack">
+                        <span class="project-card__tech-item">React</span>
+                        <span class="project-card__tech-item">TypeScript</span>
+                        <span class="project-card__tech-item">REST API</span>
+                        <span class="project-card__tech-item">classNames</span>
+                        <span class="project-card__tech-item">BEM</span>
+                      </div>
+
+                      <div class="project-card__hint">
+                        <span>Tap for details</span>
+                        <svg class="project-card__hint-icon" viewBox="0 0 24 24">
+                          <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/>
+                          <path d="M21 3v5h-5"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card__back">
+                    <div class="project-card__back-top">
+                      <h4 class="project-card__back-title">What I did:</h4>
+
+                      <div class="project-card__details-wrap">
+                        <ul class="project-card__details" data-scroll-list>
+                          <li class="project-card__detail-item">
+                            Developed a high-performance SPA from scratch with a focus on seamless, real-time task management.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Engineered a custom, reusable asynchronous API client using TypeScript Generics to ensure type-safe server communication.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Implemented complex UI patterns, including inline editing with advanced keyboard navigation (Esc/Blur handling).
+                          </li>
+                          <li class="project-card__detail-item">
+                            Optimized the interface using BEM methodology and integrated a dynamic loading system for enhanced visual feedback.
+                          </li>
+                        </ul>
+
+                        <div class="project-card__scrollbar" data-scrollbar>
+                          <div class="project-card__scrollbar-thumb" data-scrollbar-thumb></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="project-card__back-footer">
+                      <div class="project-card__links">
+                        <a href="https://mark-chep.github.io/Todo_App/" target="_blank" rel="noopener noreferrer" class="project-card__link">Demo</a>
+                        <a href="https://github.com/mark-chep/Todo_App" target="_blank" rel="noopener noreferrer" class="project-card__link">GitHub Code</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+              <!-- PROJECT 3: SHORT LINK -->
+              <article class="project-card">
+                <div class="project-card__inner">
+                  
+                  <div class="project-card__front">
+                    <div class="project-card__top">
+                      <span class="project-card__tag">Fullstack / Java</span>
+                      <h3 class="project-card__title">Short Link</h3>
+                      <p class="project-card__description">
+                        Full-stack URL shortening service with Spring Boot 3, BCrypt security, Flyway migrations, and Swagger API docs.
+                      </p>
+                    </div>
+
+                    <div class="project-card__bottom">
+                      <div class="project-card__stack">
+                        <span class="project-card__tech-item">Java 17</span>
+                        <span class="project-card__tech-item">Spring Boot 3</span>
+                        <span class="project-card__tech-item">Spring Security</span>
+                        <span class="project-card__tech-item">Hibernate</span>
+                        <span class="project-card__tech-item">Flyway</span>
+                        <span class="project-card__tech-item">H2</span>
+                        <span class="project-card__tech-item">Thymeleaf</span>
+                        <span class="project-card__tech-item">Maven</span>
+                      </div>
+
+                      <div class="project-card__hint">
+                        <span>Tap for details</span>
+                        <svg class="project-card__hint-icon" viewBox="0 0 24 24">
+                          <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/>
+                          <path d="M21 3v5h-5"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card__back">
+                    <div class="project-card__back-top">
+                      <h4 class="project-card__back-title">What I did:</h4>
+
+                      <div class="project-card__details-wrap">
+                        <ul class="project-card__details" data-scroll-list>
+                          <li class="project-card__detail-item">
+                            Developed a full-stack application from scratch, focusing on secure data management and user authorization.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Implemented a complete security system using Spring Security 3 with protected routes and BCrypt password encryption.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Integrated Flyway for automatic database migrations and handled data persistence with Spring Data JPA.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Successfully updated the project to Java 17 and Spring Boot 3, fixing legacy configuration issues and improving overall stability.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Built a clean, responsive user interface using Thymeleaf and Bootstrap, and successfully deployed the live version to Render.
+                          </li>
+                        </ul>
+
+                        <div class="project-card__scrollbar" data-scrollbar>
+                          <div class="project-card__scrollbar-thumb" data-scrollbar-thumb></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="project-card__back-footer">
+                      <div class="project-card__links">
+                        <a href="https://shortlink-7s86.onrender.com/login" target="_blank" rel="noopener noreferrer" class="project-card__link">Demo</a>
+                        <a href="https://shortlink-7s86.onrender.com/swagger-ui/index.html" target="_blank" rel="noopener noreferrer" class="project-card__link">Swagger</a>
+                        <a href="https://github.com/mark-chep/ShortLink" target="_blank" rel="noopener noreferrer" class="project-card__link">GitHub Code</a>
+                      </div>
+
+                      <div class="project-card__note">
+                        <span class="project-card__note-icon">⏳</span>Render start: 40–60s
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+              <!-- PROJECT 4: NOTES -->
+              <article class="project-card">
+                <div class="project-card__inner">
+                  
+                  <div class="project-card__front">
+                    <div class="project-card__top">
+                      <span class="project-card__tag">Backend / Java</span>
+                      <h3 class="project-card__title">Notes Productivity App</h3>
+                      <p class="project-card__description">
+                        Multi-functional web application designed for personal productivity, allowing users to manage daily and weekly plans.
+                      </p>
+                    </div>
+
+                    <div class="project-card__bottom">
+                      <div class="project-card__stack">
+                        <span class="project-card__tech-item">Java</span>
+                        <span class="project-card__tech-item">Spring Boot</span>
+                        <span class="project-card__tech-item">Spring Security</span>
+                        <span class="project-card__tech-item">Hibernate</span>
+                        <span class="project-card__tech-item">Flyway</span>
+                        <span class="project-card__tech-item">H2 Database</span>
+                        <span class="project-card__tech-item">Gradle</span>
+                        <span class="project-card__tech-item">Thymeleaf</span>
+                      </div>
+
+                      <div class="project-card__hint">
+                        <span>Tap for details</span>
+                        <svg class="project-card__hint-icon" viewBox="0 0 24 24">
+                          <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/>
+                          <path d="M21 3v5h-5"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card__back">
+                    <div class="project-card__back-top">
+                      <h4 class="project-card__back-title">What I did:</h4>
+
+                      <div class="project-card__details-wrap">
+                        <ul class="project-card__details" data-scroll-list>
+                          <li class="project-card__detail-item">
+                            Developed a multi-functional web application designed for personal productivity, allowing users to manage daily and weekly plans.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Successfully implemented a modular architecture, gradually expanding the system from basic text storage to a complex management tool.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Engineered a reliable data layer using Spring Data JPA and Hibernate, with Flyway ensuring consistent database schema updates throughout the development lifecycle.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Integrated user-level security (Spring Security) to ensure that notes and plans are private and accessible only to authorized users.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Created a dynamic and user-friendly interface using Thymeleaf, focusing on efficient server-side rendering and seamless data flow between the backend and UI.
+                          </li>
+                          <li class="project-card__detail-item">
+                            <strong>Test Access:</strong> Username: <code>user</code> | Password: <code>password</code>
+                          </li>
+                        </ul>
+
+                        <div class="project-card__scrollbar" data-scrollbar>
+                          <div class="project-card__scrollbar-thumb" data-scrollbar-thumb></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="project-card__back-footer">
+                      <div class="project-card__links">
+                        <a href="https://notes-j5ff.onrender.com/note/list" target="_blank" rel="noopener noreferrer" class="project-card__link">Demo</a>
+                        <a href="https://github.com/mark-chep/Notes" target="_blank" rel="noopener noreferrer" class="project-card__link">GitHub Code</a>
+                      </div>
+
+                      <div class="project-card__note">
+                        <span class="project-card__note-icon">⏳</span> Render start: 40–60s
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+              <!-- PROJECT 5: 2048 GAME -->
+              <article class="project-card">
+                <div class="project-card__inner">
+                  
+                  <div class="project-card__front">
+                    <div class="project-card__top">
+                      <span class="project-card__tag">JavaScript Game</span>
+                      <h3 class="project-card__title">2048 Game</h3>
+                      <p class="project-card__description">
+                        Framework-agnostic 2048 puzzle game built from scratch using pure ES6 Classes and 2D matrix algorithms.
+                      </p>
+                    </div>
+
+                    <div class="project-card__bottom">
+                      <div class="project-card__stack">
+                        <span class="project-card__tech-item">JavaScript</span>
+                        <span class="project-card__tech-item">DOM API</span>
+                        <span class="project-card__tech-item">SCSS</span>
+                        <span class="project-card__tech-item">BEM</span>
+                      </div>
+
+                      <div class="project-card__hint">
+                        <span>Tap for details</span>
+                        <svg class="project-card__hint-icon" viewBox="0 0 24 24">
+                          <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/>
+                          <path d="M21 3v5h-5"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card__back">
+                    <div class="project-card__back-top">
+                      <h4 class="project-card__back-title">What I did:</h4>
+
+                      <div class="project-card__details-wrap">
+                        <ul class="project-card__details" data-scroll-list>
+                          <li class="project-card__detail-item">
+                            Developed a framework-agnostic 2048 puzzle game from scratch using pure, object-oriented JavaScript (ES6 Classes).
+                          </li>
+                          <li class="project-card__detail-item">
+                            Engineered optimized 2D matrix manipulation algorithms to handle cell shifting, dynamic tile merging, and multidirectional board transformations.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Implemented global keyboard event handling and precise DOM manipulation to seamlessly synchronize the internal game state with the visual layout.
+                          </li>
+                          <li class="project-card__detail-item">
+                            Designed a fluid layout using BEM methodology, integrated with custom SCSS keyframe animations for polished UI transitions and visual feedback.
+                          </li>
+                        </ul>
+
+                        <div class="project-card__scrollbar" data-scrollbar>
+                          <div class="project-card__scrollbar-thumb" data-scrollbar-thumb></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="project-card__back-footer">
+                      <div class="project-card__links">
+                        <a href="https://mark-chep.github.io/2048_game/" target="_blank" rel="noopener noreferrer" class="project-card__link">Demo</a>
+                        <a href="https://github.com/mark-chep/2048_game" target="_blank" rel="noopener noreferrer" class="project-card__link">GitHub Code</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. CONTACT SECTION -->
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__header">
+            <h2 class="contacts__title">
+              Get In Touch<span class="contacts__dot">.</span>
+            </h2>
+            <p class="contacts__subtitle">Feel free to reach out for collaborations or just a friendly chat!</p>
+          </div>
+
+          <div class="contacts__grid">
+            <!-- Telegram -->
+            <a href="https://t.me/MarkChep" target="_blank" rel="noopener noreferrer" class="contacts__card">
+              <div class="contacts__card-left">
+                <svg class="contacts__card-icon" viewBox="0 0 24 24">
+                  <path d="M21.5 2L2 9.5l7.5 3L17 6.5l-5.5 8.5v5l3.5-3.5 5 3.5z"/>
+                </svg>
+                <span class="contacts__card-label">Telegram</span>
+              </div>
+              <span class="contacts__card-arrow"></span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/mark-chep" target="_blank" rel="noopener noreferrer" class="contacts__card">
+              <div class="contacts__card-left">
+                <svg class="contacts__card-icon" viewBox="0 0 24 24">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+                <span class="contacts__card-label">GitHub</span>
+              </div>
+              <span class="contacts__card-arrow"></span>
+            </a>
+
+            <!-- Email -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mark.chepizhnyi@gmail.com" class="contacts__card">
+              <div class="contacts__card-left">
+                <svg class="contacts__card-icon" viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span class="contacts__card-label">Email</span>
+              </div>
+              <span class="contacts__card-arrow"></span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/markchepizhnyi/" target="_blank" rel="noopener noreferrer" class="contacts__card">
+              <div class="contacts__card-left">
+                <svg class="contacts__card-icon" viewBox="0 0 24 24">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+                <span class="contacts__card-label">LinkedIn</span>
+              </div>
+              <span class="contacts__card-arrow"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      </main>
+
+      <!-- FLOATING CV BUTTON -->
+      <a href="./assets/doc/Mark_Chepizhny_Frontend_CV.pdf" download="Mark_Chepizhnyi_CV.pdf" class="floating-cv" aria-label="Download CV">
+        <svg class="floating-cv__icon" viewBox="0 0 24 24">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span class="floating-cv__text">Download CV</span>
+      </a>
+
+      <footer class="footer">
+        <div class="container">
+          <p class="footer__text">©<span id="current-year">2026</span> | Mark Chepizhnyi.</p>
+        </div>
+      </footer>
+
+      <script src="./app.js"></script>
+  </body>
+</html>
+
